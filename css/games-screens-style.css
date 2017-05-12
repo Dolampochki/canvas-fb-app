@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'CoconOT';
+    src: url('../fonts/CoconOT-Bold.eot');
+    src: url('../fonts/CoconOT-Bold.eot') format('embedded-opentype'),
+         url('../fonts/CoconOT-Bold.woff') format('woff'),
+         url('../fonts/CoconOT-Bold.ttf') format('truetype'),
+         url('../fonts/CoconOT-Bold.svg#CoconOT') format('svg');
+}
+
+/* all screens preview */
+
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	background: #383d50;
+	overflow: hidden;
+}
+
+.games-screen {
+  	width: 760px;
+  	height: 600px;
+  	position: relative;
+  	margin: 0 auto;
+  	overflow: hidden;
+}
+
+
+
+.all-screens-preview h2,
+.all-screens-preview h3 {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hide {	
+	display: none;	
+}
+
+.show {	
+	display: block;		
+}
+/* general */
+
+.game-screen {
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;		
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left:0;
+	/*cursor: move; */
+	overflow: hidden;
+}
+
+.heart-bg {
+	background-color: #383d50; 
+	background-image: url(../img/heart_bg_lb.png), url(../img/heart_bg_lt.png), url(../img/heart_bg_rb.png);
+	background-position: left bottom, left top, right bottom;
+	background-repeat: no-repeat; 
+	background-size: contain;
+}
+
+.game-screen strong {
+	font-weight: 600;
+}
+
+.game-screen div {
+	text-align: center;
+}
+
+.screen-title {
+	font-family: "CoconOT";
+  font-size: 2.2em;
+  line-height: 1.2em;
+  margin: 3% 0;
+  padding: 0 5%;
+}
+
+
+
+
+
+/* card */
+
+
+.slider_container {
+	position: relative; 
+	top: 0px; 
+	left: 0px; 
+	width: 760px;
+    height: 600px;
+}
+
+.game-main {	
+	width: 100%;
+	height: 100%;
+}
+
+.arrow-swipe {
+	position: absolute;
+	height: 100%;
+	width: 60px;
+	top: 270px;
+	background: url('../img/arrows.png');
+	background-repeat: no-repeat;
+	width: 60px;
+    height: 60px;
+    cursor: pointer;
+    overflow: hidden;	
+}
+
+
+
+.jssora21l { background-position: 0 -120px; left: 0px; }
+.jssora21r { background-position: 0 0; right: 0px; }
+.jssora21l:hover { background-position: 0 -180px; }
+.jssora21r:hover { background-position: 0 -60px; }
+.jssora21l.jssora21ldn { background-position: 0 -180px; }
+.jssora21r.jssora21rdn { background-position: 0 -60px; }
+            
+.game-card {
+	width: 640px;
+	height: 535px;
+	margin: 32px auto 0;
+	background-color: #434a60;
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.game-card .screen-label {
+	font-style: italic;
+	font-weight: 300;
+	line-height: 86px;
+	height: 87px;
+}
+
+.game-card .card-performance-video {
+	width: 640px;
+	height: 361px;
+	line-height: 361px;
+	background-color: #000;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.game-card .card-performance-timer {
+	height: 88px;
+}
+
+.game-card .card-performance-timer img {
+	height: 50px;
+	margin-top: 19px;
+}
+
+.game-card .card-performance-details {
+	height: 88px;
+	line-height: 76px;
+}
+
+.game-card .card-performance-details .screen-title {
+	font-size: 32px;
+	line-height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* loader */
+
+.loader_container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index:100;
+	width: 100%;
+    height: 100%;
+    padding-top: 180px;
+}
+
+.loader {
+  font-size: 10px;
+  margin: 7em auto 0 auto;
+  text-indent: -9999em;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #000;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
